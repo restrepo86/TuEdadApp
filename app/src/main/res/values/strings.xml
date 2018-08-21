@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TuEdadAhora</string>
+    <string name="bienvenido_a_tuedadahora">Bienvenido a TuEdadAhora</string>
+    <string name="ingresa_tu_nombre">Ingresa tu nombre</string>
+    <string name="ingresa_tu_edad">Ingresa tu edad</string>
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="calcular_edad">Calcular Edad</string>
 </resources>
