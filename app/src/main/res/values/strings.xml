@@ -5,6 +5,6 @@
     <string name="ingresa_tu_edad">Ingresa tu fecha de nacimiento</string>
     <string name="formato_fecha">dd/mm/yyyy</string>
     <string name="calcular_edad">Calcular Edad</string>
-    <string name="respuesta_formateada">¡ Hola señor(a) %1$s!, su edad es %2$s años</string>
+    <string name="respuesta_formateada">¡ Hola señor(a) %1$s !, su edad es %2$s años</string>
     <string name="error_campos_vacios">Debe diligenciar todos los campos antes de continuar</string>
 </resources>

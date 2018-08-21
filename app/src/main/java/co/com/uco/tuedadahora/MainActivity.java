@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     public void calcularEdad(View view) throws TuEdadAhoraExcepcion {
 
         try {
-            String nombre = txtNombre.getText().toString();
+            String nombre = txtNombre.getText().toString().trim();
             int edadEnAnios = obtenerEdadEnAnios();
             if (nombre.isEmpty()) throw new TuEdadAhoraExcepcion(getString(R.string.error_campos_vacios));
             Intent intent = new Intent(MainActivity.this, EdadActivity.class);
