@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             fechaDeNacimiento = dateFormat.parse(dateFeNacimiento.getText().toString());
         } catch (ParseException e) {
-            throw new TuEdadAhoraExcepcion("Ocurrio un error dandole formato a la fecha ", e);
+            throw new TuEdadAhoraExcepcion(getString(R.string.error_formato_fecha), e);
         }
         Calendar feNacimiento = new GregorianCalendar();
         feNacimiento.setTime(fechaDeNacimiento);
