@@ -17,6 +17,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 import co.com.uco.tuedadahora.constantes.Constantes;
+import co.com.uco.tuedadahora.excepciones.AniosException;
 import co.com.uco.tuedadahora.excepciones.TuEdadAhoraExcepcion;
 
 
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             String nombre = txtNombre.getText().toString().trim();
             int edadEnAnios = obtenerEdadEnAnios();
             if (nombre.isEmpty()) throw new TuEdadAhoraExcepcion(getString(R.string.error_campos_vacios));
+            if (edadEnAnios < 0 ) throw new AniosException(getString(R.string.error_edad));
             Intent intent = new Intent(MainActivity.this, EdadActivity.class);
             intent.putExtra(Constantes.EDAD, String.valueOf(edadEnAnios));
             intent.putExtra(Constantes.NOMBRE, nombre);
@@ -83,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
         } catch (TuEdadAhoraExcepcion excepcion) {
             Toast.makeText(getApplicationContext(), getString(R.string.error_campos_vacios), Toast.LENGTH_SHORT).show();
+        } catch (AniosException aniosException){
+            Toast.makeText(getApplicationContext(), aniosException.getMessage(), Toast.LENGTH_SHORT).show();
         } catch (Exception ex) {
             Toast.makeText(getApplicationContext(), getString(R.string.error_campos_vacios), Toast.LENGTH_SHORT).show();
         }

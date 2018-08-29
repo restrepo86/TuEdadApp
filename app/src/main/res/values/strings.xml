@@ -7,4 +7,5 @@
     <string name="calcular_edad">Calcular Edad</string>
     <string name="respuesta_formateada">¡ Hola señor(a) %1$s !, su edad es %2$s años</string>
     <string name="error_campos_vacios">Debe diligenciar todos los campos antes de continuar</string>
+    <string name="error_edad">La fecha de nacimiento debe ser una fecha valida</string>
 </resources>

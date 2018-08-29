@@ -4,10 +4,6 @@ public class TuEdadAhoraExcepcion extends Exception {
 
     private static final long serialVersionUID = 1L;
 
-    public TuEdadAhoraExcepcion(Throwable throwable){
-        super(throwable);
-    }
-
     public TuEdadAhoraExcepcion(String mensaje) {
         super(mensaje);
     }
